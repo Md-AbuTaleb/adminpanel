@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Container -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <h2>Admin</h2>
+                <button id="closeSidebar">&times;</button>
+            </div>
+            <ul class="menu">
+                <li><a href="#">Dashboard</a></li>
+
+                <li class="submenu">
+                    <a href="#">Users <span class="arrow">&#9654;</span></a>
+                    <ul class="submenu-list">
+                        <li><a href="#">Add User</a></li>
+                        <li><a href="#">Manage Users</a></li>
+                    </ul>
+                </li>
+
+                <li class="submenu">
+                    <a href="#">Settings <span class="arrow">&#9654;</span></a>
+                    <ul class="submenu-list">
+                        <li><a href="#">Profile Settings</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="#">Reports</a></li>
+            </ul>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <!-- Header -->
+            <header class="header">
+                <button id="openSidebar">&#9776;</button>
+                <h1>Dashboard</h1>
+            </header>
+
+            <!-- Content -->
+            <section class="content">
+                <h2>Welcome Admin!</h2>
+                <p>This is your admin dashboard where you can manage everything.</p>
+            </section>
+
+            <!-- Footer -->
+            <footer class="footer">
+                <p>&copy; 2025 Admin Panel. All rights reserved.</p>
+            </footer>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
